@@ -7,6 +7,6 @@ read USERNAME
 echo -n "Enter user " 
 USERPASSWD=$(mkpasswd -m sha512crypt)
 chvt 1
-echo "user --name=\"$USERNAME\" --groups=wheel --password=\"$USERPASSWD\" --iscrypted" # >> /tmp/user_data
+echo "user --name=\"$USERNAME\" --groups=wheel --password=\"$USERPASSWD\" --iscrypted" >> /tmp/user_data
 #printf "user --name=\"$USERNAME\" --groups=wheel --password=\"$USERPASSWD\" --iscrypted" # >> /tmp/user_data
 
