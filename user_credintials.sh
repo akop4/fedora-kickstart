@@ -1,6 +1,7 @@
 #! /usr/bin/bash
 exec < /dev/tty7 > /dev/tty7
 chvt 7
+exec dnf install -y mkpasswd
 echo -n "Input user Name: "
 read USERNAME
 # While loop for password
